@@ -5,8 +5,8 @@
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
                     $name_to_search = htmlentities(strtolower($_GET['name'])); // HuLk == hulk
                     $ts = time();
-                    $public_key = '<!-- Your Public Key Here -->';
-                    $private_key = '<!-- Your Private Key Here -->';
+                    $public_key = '08e5826f399b494c9c6fb31a4f0f807c';
+                    $private_key = 'c7ed3bf104aba381a9f4306621d2d96b7d6e79a5';
                     $hash = md5($ts . $private_key . $public_key);
                     $query = array(
                         "name" => $name_to_search, // ""
